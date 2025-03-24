@@ -29,15 +29,17 @@ export default function RootLayout({
       >
         <div className="grid grid-rows-[100vh_100vh_70rem_60px] min-h-screen">
           <section className="bg-red-500 text-white flex flex-col">
-            <nav className="bg-white p-4 justify-between flex flex-row min-h-[92px] items-center">
-                <h1 className="text-lg text-zinc-900">Mauricio Silva</h1>
+            <nav className="bg-white px-48 justify-between flex flex-row min-h-[92px] items-center">
+                <h1 className="text-lg text-zinc-900">MAURICIO SILVA</h1>
                 <ul className="flex space-x-4 text-zinc-900">
-                  <li><a href="#">Página inicial</a></li>
+                  <li><a href="#">Início</a></li>
                   <li><a href="#">Sobre</a></li>
+                  <li><a href="#">Experiências</a></li>
+                  <li><a href="#">Habilidades</a></li>
                   <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-              <div className="bg-white text-white p-16 h-full flex flex-row">
+              <div className="bg-white text-white px-48 h-full flex flex-row">
                 <div className="bg-white text-white p-4 h-full justify-center items-start flex flex-col w-4/6">
                   <span className="text-zinc-900 font-normal text-base font-[family-name:var(--font-montserrat)]">Olá, eu sou</span>
                   <motion.h1
@@ -60,7 +62,7 @@ export default function RootLayout({
                   </div>
                 </div>
                 <div className="bg-white p-4 h-full w-2/6 flex justify-center items-center">
-                  <Image alt="" width={350} src="profile.png" />
+                  <Image alt="" width={350} height={350} src="profile.png" />
                 </div>
               </div>
           </section>
@@ -72,7 +74,7 @@ export default function RootLayout({
               transition={{ duration: 1 }} // Tempo da animação em segundos
               className="text-2xl font-semibold"
             >
-              A BIT ‘BOUT MY JOURNEY
+              SOBRE
             </motion.h1>
 
             <motion.p
@@ -122,8 +124,16 @@ export default function RootLayout({
             </ul>
           </section>
           <section className="bg-white text-zinc-900 p-[6rem] flex flex-col justify-start items-center">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }} // Tempo da animação em segundos
+              className="text-2xl font-semibold"
+            >
+              EXPERIÊNCIAS
+            </motion.h1>
             <div className="max-w-[700px] gap-1">
-              <h1 className="text-2xl font-semibold">Work</h1>
               <h2 className="font-normal text-base mt-1">Check out some of my recent work – cool products Ive been part of, built using the latest
                 tech and libraries to create something awesome!</h2>
 
