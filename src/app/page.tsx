@@ -7,11 +7,11 @@ import { ExperienceCard } from "./components/ExperienceCard";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[100vh_70rem_120rem_100rem_5rem] min-h-screen">
+    <div className="grid grid-rows-[100vh_105rem_130rem_160rem_5rem] md:grid-rows-[100vh_70rem_130rem_100rem_5rem] min-h-screen">
       <section className="bg-red-500 text-white flex flex-col">
-        <nav className="bg-white px-48 justify-between flex flex-row min-h-[92px] items-center">
+        <nav className="bg-white md:px-48 justify-center gap-2 md:justify-between flex flex-col md:flex-row min-h-[92px] items-center">
           <h1 className="text-lg text-zinc-900">MAURICIO SILVA</h1>
-          <ul className="flex space-x-4 text-zinc-900">
+          <ul className="flex flex-row gap-4 text-zinc-900">
             <li>
               <Link href="#">Início</Link>
             </li>
@@ -26,8 +26,8 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className="bg-white text-white px-48 h-full flex flex-row">
-          <div className="bg-white text-white p-4 h-full justify-center items-start flex flex-col w-3/6">
+        <div className="bg-white text-white h-full md:px-48 flex flex-col md:flex-row">
+          <div className="bg-white text-white p-4 h-full justify-center items-start flex flex-col w-full md:w-3/6">
             <span className="text-zinc-900 font-normal text-base font-[family-name:var(--font-montserrat)]">
               Olá, eu sou
             </span>
@@ -46,7 +46,7 @@ export default function Home() {
               <Link href="https://www.linkedin.com/in/silvasmvs/"><Image alt="" src="social-media/linkedin.svg" width={24} height={24} /></Link>
             </div>
           </div>
-          <div className="bg-white p-4 h-full w-3/6 flex justify-center items-center">
+          <div className="bg-white p-4 h-full w-full md:w-3/6 flex justify-center items-center">
             <Image alt="" width={400} height={400} src="profile.png" />
           </div>
         </div>
@@ -54,31 +54,33 @@ export default function Home() {
       <section id="about" className="bg-zinc-50 text-zinc-900 p-4 flex flex-col justify-start items-center py-[6rem]">
         <AnimateText className="text-2xl font-semibold">SOBRE MIM</AnimateText>
 
-        <AnimateText className="mt-8 max-w-[700px]">
-          Sou Desenvolvedor Frontend com mais de 7 anos de experiência, especializado em React.js, Next.js, React Native,
-          GraphQL, Node.js e TypeScript. Tenho expertise na construção de design systems do zero, trabalhando em conjunto
+        <AnimateText className="mt-8 w-full md:max-w-[700px]">
+          Sou Desenvolvedor <b>frontend</b> com mais de 7 anos de experiência, especializado em <b>React.js</b>, <b>Next.js</b>, <b>React Native</b>,
+          <b>GraphQL</b>, <b>Node.js</b> e <b>TypeScript</b>. Tenho expertise na construção de design systems do zero, trabalhando em conjunto
           com times de design para garantir componentes reutilizáveis e acessíveis, seguindo padrões como Composition Pattern. <br /><br /> 
 
-          Minha experiência inclui otimização de performance em aplicações React, gerenciamento avançado de estado e estratégias
-          como Server-Side Rendering (SSR) e Static Site Generation (SSG) para melhorar SEO, tempo de carregamento e reduzir a
+          Minha experiência inclui otimização de performance em aplicações <b>React</b>, gerenciamento avançado de estado e estratégias
+          como  <b>Server-Side Rendering (SSR)</b> e <b>Static Site Generation (SSG)</b> para melhorar SEO, tempo de carregamento e reduzir a
           carga no frontend. Também atuo na arquitetura modular de aplicações, refatorando sistemas monolíticos para microfrontends,
           promovendo desacoplamento, escalabilidade e melhor performance para múltiplos times. <br /><br /> 
 
-          No backend, tenho experiência com GraphQL, BFFs e APIs REST usando Node.js, Express e TRPC, além de bancos SQL e NoSQL e
-          APIs com Laravel. Possuo conhecimentos em arquitetura orientada a eventos, filas (RabbitMQ) e microserviços. Também aplico
-          boas práticas de CI/CD, incluindo automação de deploy e pipelines com GitHub Actions. Tenho experiência com testes unitários
-          e E2E (Jest, Testing Library, Cypress, CircleCI) e monitoramento de aplicações com Sentry. <br /><br /> 
+          No <b>backend</b>, tenho experiência com <b>GraphQL</b>, <b>BFFs</b> e <b>APIs REST</b> usando <b>Node.js</b>, <b>Express</b> e <b>TRPC</b>, além de bancos <b>SQL</b> e <b>NoSQL</b> e
+          APIs com <b>Laravel</b>. Possuo conhecimentos em arquitetura orientada a eventos, filas (<b>RabbitMQ</b>) e microserviços. Também aplico
+          boas práticas de <b>CI/CD</b>, incluindo automação de deploy e pipelines com <b>GitHub Actions</b>. Tenho experiência com testes unitários
+          e <b>E2E</b> (<b>Jest, Testing Library, Cypress, CircleCI</b>) e monitoramento de aplicações com <b>Sentry</b>. <br /><br /> 
 
-          Além disso, tenho vivência com AWS (API Gateway, S3, Route 53, Elastic Beanstalk e CloudWatch) e estou sempre em busca de
+          Além disso, tenho vivência com <b>AWS</b> (<b>API Gateway, S3, Route 53, Elastic Beanstalk e CloudWatch</b>) e estou sempre em busca de
           aprimorar a arquitetura modular, código limpo e boas práticas de desenvolvimento, focando na experiência do usuário e na
-          eficiência do time de engenharia.
+          eficiência do time de engenharia. <br /><br /> 
+
+          <b>Possuo inglês intermediário, o que me permite ler documentação técnica, escrever e participar de conversas técnicas em inglês.</b>
         </AnimateText>
 
-        <AnimateText className="mt-8 w-[700px]">
+        <AnimateText className="mt-8 w-full md:max-w-[700px]">
           Algumas das tecnologias que eu trabalho:
         </AnimateText>
 
-        <ul className="flex flex-wrap gap-2 mt-4 max-w-[700px]">
+        <ul className="flex flex-wrap gap-2 mt-4 w-full md:max-w-[700px]">
           <Label name="JavaScript" iconUrl="labels/icon-javascript.svg" />
           <Label name="Typescript" iconUrl="labels/icon-typescript.svg" />
           <Label name="React" iconUrl="labels/icon-react.svg" />
@@ -104,11 +106,11 @@ export default function Home() {
           <Label name="Sentry" iconUrl="labels/icon-sentry.svg" />
         </ul>
       </section>
-      <section id="experiences" className="bg-white text-zinc-900 p-[6rem] flex flex-col justify-start items-center">
+      <section id="experiences" className="bg-white text-zinc-900 p-4 md:p-[6rem] flex flex-col justify-start items-center py-[6rem]">
         <AnimateText className="text-2xl font-semibold">
           EXPERIÊNCIAS
         </AnimateText>
-        <div className="max-w-[700px] gap-1">
+        <div className="w-full md:max-w-[700px] gap-1">
           <ExperienceCard
             logoUrl="logos/ClassApp.png"
             position="Engenheiro de Software Sênior"
@@ -171,7 +173,7 @@ export default function Home() {
         </div>
         
         <div className="max-w-[900px] gap-2 flex flex-wrap justify-between mt-12">
-          <div className="justify-center items-start flex flex-col max-w-[410px] w-1/2 gap-3 p-4">
+          <div className="justify-center items-start flex flex-col md:max-w-[410px] md:w-1/2 gap-3 p-4">
             <Link href="https://github.com/silvasmvs/cuidar-plus" target="_blank">
               <Image width={418} height={320} alt="" src={"projects/cuidar+.svg"}  />
               <h2 className="font-semibold text-xl mt-4">Cuidar+</h2>
@@ -194,7 +196,7 @@ export default function Home() {
               <Label small name="Trpc" iconUrl="labels/icon-trpc.svg" />
             </div>
           </div>
-          <div className="justify-center items-start flex flex-col max-w-[410px] w-1/2 gap-2 p-4">
+          <div className="justify-center items-start flex flex-col md:max-w-[410px] md:w-1/2gap-2 p-4">
             <Link href="https://github.com/silvasmvs/microsservices-api" target="_blank">
               <Image width={418} height={320} alt="" src={"projects/server.svg"}  />
               <h2 className="font-semibold text-xl mt-4">Microsservices Api</h2>
@@ -213,7 +215,7 @@ export default function Home() {
               <Label small name="AWS" iconUrl="labels/icon-aws.svg" />
             </div>
           </div>
-          <div className="justify-center items-start flex flex-col max-w-[410px] w-1/2 gap-2 p-4">
+          <div className="justify-center items-start flex flex-col md:max-w-[410px] md:w-1/2 gap-2 p-4">
             <Link href="https://github.com/silvasmvs/portfolio-ui" target="_blank">
               <Image width={418} height={320} alt="" src={"projects/portfolio.svg"}  />
               <h2 className="font-semibold text-xl mt-4">Portfólio UI</h2>
@@ -229,7 +231,7 @@ export default function Home() {
               <Label small name="Tailwind" iconUrl="labels/icon-tailwindcss.svg" />
             </div>
           </div>
-          <div className="justify-center items-start flex flex-col max-w-[410px] w-1/2 gap-2 p-4">
+          <div className="justify-center items-start flex flex-col md:max-w-[410px] md:w-1/2 gap-2 p-4">
             <Link href="https://www.figma.com/design/kR0v1SS9WNen2qnk378gQC/Cuidar%2B?node-id=0-1&t=DFSUMoLzoyGCb1GA-1" target="_blank">
               <Image width={418} height={320} alt="" src={"projects/cuidar+ui.svg"}  />
               <h2 className="font-semibold text-xl mt-4">Cuidar+ UX/UI</h2>
@@ -250,14 +252,14 @@ export default function Home() {
           </div>
         </div>        
       </section>
-      <footer className="bg-zinc-950 text-white px-20 flex flex-row justify-between items-center">
-      <span>Copyright 2025</span>
-        <span>Desenvolvido por Mauricio Silva</span>
-        
-        <div className="flex flex-row justify-between items-center gap-6">
-          <Link href="https://github.com/silvasmvs" target="_blank"><Image className="invert" alt="" src="social-media/github.svg" width={24} height={24} /></Link>
-          <Link href="https://www.linkedin.com/in/silvasmvs/" target="_blank"><Image className="invert" alt="" src="social-media/linkedin.svg" width={24} height={24} /></Link>
-        </div>
+      <footer className="bg-zinc-950 text-white px-4 md:px-20 flex flex-row justify-between items-center">
+          <span>Copyright 2025</span>
+          <span>Desenvolvido por Mauricio Silva</span>
+            
+          <div className="flex flex-row justify-between items-center gap-4 md:gap-6">
+            <Link href="https://github.com/silvasmvs" target="_blank"><Image className="invert" alt="" src="social-media/github.svg" width={24} height={24} /></Link>
+            <Link href="https://www.linkedin.com/in/silvasmvs/" target="_blank"><Image className="invert" alt="" src="social-media/linkedin.svg" width={24} height={24} /></Link>
+          </div>
       </footer>
     </div>
   );
