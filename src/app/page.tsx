@@ -55,7 +55,7 @@ export default function Home() {
         <AnimateText className="text-2xl font-semibold">SOBRE MIM</AnimateText>
 
         <AnimateText className="mt-8 w-full md:max-w-[700px]">
-          Sou Desenvolvedor <b>frontend</b> com mais de 7 anos de experiência, especializado em <b>React.js</b>, <b>Next.js</b>, <b>React Native</b>,
+          Sou Desenvolvedor <b>frontend</b> com mais de 7 anos de experiência, possuo <b>Inglês intermediário</b> e sou especializado em <b>React.js</b>, <b>Next.js</b>, <b>React Native</b>,
           <b>GraphQL</b>, <b>Node.js</b> e <b>TypeScript</b>. Tenho expertise na construção de design systems do zero, trabalhando em conjunto
           com times de design para garantir componentes reutilizáveis e acessíveis, seguindo padrões como Composition Pattern. <br /><br /> 
 
