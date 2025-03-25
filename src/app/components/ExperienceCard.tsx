@@ -16,7 +16,7 @@ export function ExperienceCard({
     tasks,
 }: ExperienceCardProps) {
   return (
-    <div className="flex flex-row mt-8 bg-white p-4 justify-center items-start gap-4">
+    <div className="flex flex-col mt-8 bg-white p-4 justify-center items-start w-full">
         <div className="min-w-[60px]">
             <Image alt="" height={60} width={60} src={logoUrl} />
         </div>
