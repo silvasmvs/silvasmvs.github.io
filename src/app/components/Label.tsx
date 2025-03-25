@@ -9,7 +9,7 @@ export interface LabelProps {
 export function Label({ name, iconUrl, small = false }: LabelProps) {
     if(small) {
         return (
-            <li className="border border-grayLabel flex gap-1 px-2 py-1 rounded-md">
+            <li className="border border-grayLabel flex gap-1 px-2 py-1 rounded-md justify-center items-center">
                 <Image alt="label image" width={16} height={16} src={iconUrl} />
                 <span className="text-xs">{name}</span>
             </li> 
@@ -17,8 +17,8 @@ export function Label({ name, iconUrl, small = false }: LabelProps) {
     }
 
     return (
-        <li className="border border-grayLabel flex gap-2 px-4 py-1 rounded-md">
-            <Image alt="label image" width={20} height={20} src={iconUrl} />
+        <li className="border border-grayLabel flex gap-2 px-4 py-1 rounded-md justify-center items-center">
+            <Image alt="label image" width={20} height={25} src={iconUrl} />
             <span>{name}</span>
         </li> 
     )
